@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Task List </title>
+    <meta name="view-port" content="width=device - width, initial-scale = 1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <ul>
+          <li><a href="../index.html"> Home </a></li>
+          <li><a href="../Budget/index.html"> Budget Tracker </a></li>
+          <li><a href="../Guests/index.html"> Guest List </a></li>
+          <li><a href="index.html"> To-Do List </a></li>        
+        </ul>
+    </header>
+    <h1> Task List </h1>
+    <label for="TaskName"> Task Name </label>
+    <input type="text" id="TaskName" placeholder="Buy Wedding Dress..">
+    <label for="TaskDescription"> Description </label>
+    <input type="text" id="TaskDescription" placeholder="Decide on silhouette, color and budget">
+    <button onclick="addTask()" class="addbtn"> Add </button>
+  </body>
+</html>

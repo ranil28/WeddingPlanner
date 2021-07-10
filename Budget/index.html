@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Budget Tracker </title>
+    <meta name="view-port" content="width=device - width, initial-scale = 1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-budget.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <ul>
+          <li><a href="../index.html"> Home </a></li>
+          <li><a href="index.html"> Budget Tracker </a></li>
+          <li><a href="../Guests/index.html"> Guest List </a></li>
+          <li><a href="../ToDo/index.html"> To-Do List </a></li>        
+        </ul>
+    </header>
+    <h1> Budget Tracker </h1>
+    <label for="TotalBudget"> Set your budget for the wedding </label>
+    <input type="number" id="TotalBudget" placeholder="25000">
+    <button onclick="setBudget()" class="addbtn"> Set </button>
+    <h2> The budget for your wedding is <output id="TotalBudget"> </output> </h2>
+    <h2> You have spent .... </h2>
+    <label for="ExpenseName"> Name </label>
+    <input type="text" id="ExpenseName" placeholder="Wedding Dress" required>
+    <label for="ExpenseValue"> Amount </label>
+    <input type="number" id="ExpenseValue" placeholder="2000" required>
+    <label for="ExpenseNotes"> Description </label>
+    <input type="text" id="ExpenseNotes" placeholder="Trial on 25th May.">
+    <button onclick="addExpense()" class="addbtn"> Add </button>
+  </body>
+</html>
